@@ -17,19 +17,19 @@ var MChain = MChain || (function(){
 		}
 
 		// generate the list of states and their adjacency lists
-		for (var i=0; i<events.length-order+2; i++){
-			// create a bracket that includes the state as well as the neighbor event
-			var bracket = [];
+		for (var i=0; i<events.length-order; i++){
+			// create a frame that includes the state as well as the neighbor event
+			var frame = [];
 			for (var j=i; j<i+order+1; j++){
-				bracket.push(events[j]);
+				frame.push(events[j]);
 			}
 
 			// set the neighbor event
-			var neighborEvent = bracket[bracket.length-1];
-			bracket.pop();
+			var neighborEvent = frame[frame.length-1];
+			frame.pop();
 
 			// set the state
-			var state = bracket.join();
+			var state = frame.join();
 
 			// add the neighbor event to the chain
 			var newList = true;
