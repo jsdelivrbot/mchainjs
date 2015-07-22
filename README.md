@@ -7,3 +7,5 @@ HTML:
 ``` html
 <script type="text/javascript" src="https://cdn.rawgit.com/sublinear/mchainjs/master/mchain.min.js"></script>
 ```
+
+[JSFiddle Example](http://jsfiddle.net/6bqczjLq)
